@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail.html</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+
+ <!-- Navbar -->
+  <nav>
+    <div class="logo">Anemia</div>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}#home">Home</a>
+      <button class="check-btn">check</button>
+    </div>
+  </nav>
+
+  <!-- Result Section -->
+  <div class="result-section">
+    <h2>Result</h2>
+    <p>Hence, based on calculation: {{ prediction_text }}</p>
+
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <h4>Contact Us</h4>
+    <p>The Smart Bridge</p>
+    <p><a href="#" style="color: dodgerblue;">Hyderabad, Telangana, India</a></p>
+    <p><b>Phone:</b> +1 5589 55488 55</p>
+    <p><b>Email:</b> info@example.com</p>
+  </div>
+
+
+
+    
+
+</body>
+</html>
